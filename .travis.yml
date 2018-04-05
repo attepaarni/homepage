@@ -2,6 +2,8 @@ language: node_js
 node_js:
   - node
 
+install: sed -i 's/?GOOGLE_UA/$GOOGLE_UA/g' build/index.html $GOOGLE_UA
+
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
