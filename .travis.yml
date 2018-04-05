@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - node
 
-install: sed -i 's/?GOOGLE_UA/$GOOGLE_UA/g' build/index.html
+install: sed -i 's/?GOOGLE_UA/{$GOOGLE_UA}/g' build/index.html
 
 deploy:
   provider: s3
