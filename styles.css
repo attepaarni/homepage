@@ -1,0 +1,44 @@
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.some-icons {
+    text-align: center;
+    font-size: 3em;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.profile-img{
+    text-align: center;
+    margin: 1em;
+}
+.personal-info{
+    text-align: center;
+    margin: 1em;
+}
+
+i:hover {
+    color: coral;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+@media screen and (min-width: 700px) {
+    .profile-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .profile-img{      
+        width: 300px
+    }
+    
+    .personal-info{
+        width: 400px;
+        text-align: left;
+    }
+}
