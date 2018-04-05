@@ -2,7 +2,9 @@ language: node_js
 node_js:
   - node
 
-install: sed -i 's/?GOOGLE_UA/{$GOOGLE_UA}/g' build/index.html
+before_script:
+  - npm replace -g
+script: replace '?GOOGLE_UA' $GOOGLE_UA build/index.html
 
 deploy:
   provider: s3
