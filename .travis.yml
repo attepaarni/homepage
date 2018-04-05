@@ -4,7 +4,7 @@ node_js:
 
 before_script:
   - npm install replace -g
-script: replace '?GOOGLE_UA' '${GOOGLE_UA}'' build/index.html
+script: replace '?GOOGLE_UA' '${GOOGLE_UA}' build/index.html
 
 deploy:
   provider: s3
