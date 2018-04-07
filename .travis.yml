@@ -5,6 +5,7 @@ node_js:
 before_script:
   - npm install replace -g
   - npm install htmlhint -g
+  - npm install csslint -g
 script: 
   - replace "GOOGLE_UA" "${GOOGLE_UA}" build/index.html
   - htmlhint build/index.html
