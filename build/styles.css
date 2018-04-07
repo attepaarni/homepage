@@ -3,8 +3,8 @@
 }
 
 .some-icons {
-    text-align: center;
     font-size: 3em;
+    text-align: center;
 }
 
 img {
@@ -12,12 +12,12 @@ img {
 }
 
 .profile-img{
-    text-align: center;
     margin: 1em;
+    text-align: center;
 }
 .personal-info{
-    text-align: center;
     margin: 1em;
+    text-align: center;
 }
 
 i:hover {
@@ -38,7 +38,7 @@ a {
     }
     
     .personal-info{
-        width: 400px;
         text-align: left;
+        width: 400px;
     }
 }

@@ -4,7 +4,11 @@ node_js:
 
 before_script:
   - npm install replace -g
-script: replace "GOOGLE_UA" "${GOOGLE_UA}" build/index.html
+  - npm install htmlhint -g
+script: 
+  - replace "GOOGLE_UA" "${GOOGLE_UA}" build/index.html
+  - htmlhint build/index.html
+  - csslint build/styles.css
 
 deploy:
   provider: s3
