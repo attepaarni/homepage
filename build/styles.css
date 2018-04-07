@@ -1,5 +1,19 @@
-.content {
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    color: #547F79;
+    font-family: Tahoma, Geneva, sans-serif;
+ }
+
+h1 {
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #547F79;
+    text-decoration: none;
 }
 
 .some-icons {
@@ -7,33 +21,34 @@
     text-align: center;
 }
 
-img {
+.profile-img {
     border-radius: 50%;
+    -webkit-box-shadow: 12px 7px 0 0 rgba(195,204,203,1);
+    -moz-box-shadow: 12px 7px 0 0 rgba(195,204,203,1);
+    box-shadow: 12px 7px 0 0 rgba(195,204,203,1);
 }
 
-.profile-img{
+.profile-img-container{
     margin: 1em;
     text-align: center;
 }
+
 .personal-info{
     margin: 1em;
     text-align: center;
 }
 
 i:hover {
-    color: coral;
+    color: #A8FFF2;
 }
 
-a {
-    color: black;
-    text-decoration: none;
-}
 @media screen and (min-width: 700px) {
+
     .profile-wrapper{
         display: flex;
         justify-content: center;
     }
-    .profile-img{      
+    .profile-img-container{      
         width: 300px
     }
     
