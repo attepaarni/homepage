@@ -4,12 +4,11 @@ node_js:
 
 before_script:
   - npm install replace -g
-  - npm install htmlhint -g
-  - npm install csslint -g
+  
 script: 
   - replace "GOOGLE_UA" "${GOOGLE_UA}" build/index.html
-  - htmlhint build/index.html
-  - csslint build/styles.css
+  - grunt test
+  - grunt build-dist
 
 deploy:
   provider: s3
@@ -17,7 +16,7 @@ deploy:
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: $AWS_S3_BUCKET_NAME
   skip_cleanup: true
-  local_dir: build
+  local_dir: dist
   region: $AWS_REGION
   on:
     branch: master
