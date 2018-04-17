@@ -1,7 +1,6 @@
 body {
     background-color: #FFF2E0;
     color: #15537C;
-    fill: currentColor;
     font-family: Arial, Helvetica, sans-serif;
  }
 
@@ -23,6 +22,7 @@ a svg:hover {
 }
 
 .icon{
+    fill: currentColor;
     padding: 0.25em;
 }
 
