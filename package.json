@@ -7,16 +7,14 @@
     "grunt-contrib-csslint": "~2.0.0",
     "grunt-contrib-cssmin": "~2.2.1",
     "grunt-htmlhint": "~0.9.13",
-    "grunt-minify-html": "~3.0.0",
-    "htmlhint": "~0.9.13"
+    "grunt-minify-html": "~3.0.0"
   },
   "dependencies": {
     "csslint": "~1.0.5",
     "grunt-contrib-csslint": "~2.0.0",
     "grunt-contrib-cssmin": "~2.2.1",
     "grunt-htmlhint": "~0.9.13",
-    "grunt-minify-html": "~3.0.0",
-    "htmlhint": "~0.9.13"
+    "grunt-minify-html": "~3.0.0"
   },
   "description": "My homepage",
   "main": "index.js",
