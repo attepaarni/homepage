@@ -8,6 +8,15 @@ h1 {
     font-weight: normal;
 }
 
+.title-buzzwords{
+    font-weight: bold;
+}
+
+h2.title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 img {
     max-width: 100%;
 }
