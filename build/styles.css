@@ -1,7 +1,7 @@
 body {
-    background-color: #FFF2E0;
-    color: #15537C;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C3EFE7;
+    color: #333333;
+    font-family: 'Lato', sans-serif;
  }
 
 h1 {
@@ -13,12 +13,12 @@ img {
 }
 
 a {
-    color: #15537C;
+    color: #F68D6F;
     text-decoration: none;
 }
 
 a svg:hover {
-    fill: #368EC8;
+    fill: #ff663b;
 }
 
 .icon{
@@ -32,9 +32,9 @@ a svg:hover {
 
 .profile-img {
     border-radius: 50%;
-    -webkit-box-shadow: 12px 7px 0 0 rgba(124,77,9,1);
-    -moz-box-shadow: 12px 7px 0 0 rgba(124,77,9,1);
-    box-shadow: 12px 7px 0 0 rgba(124,77,9,1);
+    -webkit-box-shadow: 12px 7px 0 0 rgb(191,174,246);
+    -moz-box-shadow: 12px 7px 0 0 rgb(191,174,246);
+    box-shadow: 12px 7px 0 0 rgb(191,174,246);
 }
 
 .profile-img-container{
