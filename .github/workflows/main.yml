@@ -18,6 +18,9 @@ jobs:
       - name: Replace Google UA-tag
         run: sed -i 's/GOOGLE_UA/${{ secrets.GOOGLE_UA }}/g' build/index.html
       
+      - name: Install Grunt 
+        run: npm install grunt
+
       - name: Test 
         run: grunt test
 
