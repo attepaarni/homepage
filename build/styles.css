@@ -1,5 +1,4 @@
 body {
-    background-color: #C3EFE7;
     color: #333333;
     font-family: 'Lato', sans-serif;
  }
@@ -12,9 +11,9 @@ h1 {
     font-weight: bold;
 }
 
-h2.title {
-    margin-top: 0;
+.title {
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 img {
@@ -22,11 +21,15 @@ img {
 }
 
 a {
-    color: #F68D6F;
+    color: black;
     text-decoration: none;
 }
 
 a svg:hover {
+    fill: #ff663b;
+}
+
+a:hover {
     fill: #ff663b;
 }
 
@@ -41,9 +44,6 @@ a svg:hover {
 
 .profile-img {
     border-radius: 50%;
-    -webkit-box-shadow: 12px 7px 0 0 rgb(191,174,246);
-    -moz-box-shadow: 12px 7px 0 0 rgb(191,174,246);
-    box-shadow: 12px 7px 0 0 rgb(191,174,246);
 }
 
 .profile-img-container{
