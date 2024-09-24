@@ -38,6 +38,14 @@ module.exports = function (grunt) {
         }
       }
     },
+    copy: {
+      main: {
+        expand: true,
+        cwd: 'assets/',
+        src: '**',
+        dest: 'dist/',
+      },
+    },
 
   });
 
@@ -45,9 +53,10 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks("grunt-minify-html");
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.registerTask('default', ['htmlhint', 'csslint','minifyHtml', 'cssmin']);
-  grunt.registerTask('build-dist', ['minifyHtml', 'cssmin']);
+  grunt.registerTask('build-dist', ['minifyHtml', 'cssmin', 'copy']);
   grunt.registerTask('test', ['htmlhint', 'csslint']);
 
 };
