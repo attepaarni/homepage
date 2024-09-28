@@ -6,7 +6,7 @@ module.exports = function (grunt) {
         options: {
           'tag-pair': true
         },
-        src: ['build/*.html']
+        src: ['src/*.html']
       }
     },
     csslint: {
@@ -14,7 +14,7 @@ module.exports = function (grunt) {
         options: {
           import: 2
         },
-        src: ['build/*.css']
+        src: ['src/*.css']
       }
     },
     minifyHtml: {
@@ -39,14 +39,29 @@ module.exports = function (grunt) {
       }
     },
     copy: {
-      main: {
+      build: {
+        expand: true,
+        cwd: 'src/',
+        src: '**',
+        dest: 'build/',
+      },
+      assets: {
         expand: true,
         cwd: 'assets/',
         src: '**',
         dest: 'dist/',
       },
     },
-
+    cachebreaker: {
+      dev: {
+        options: {
+          match: ['styles.css']
+      },
+          files: {
+              src: ['build/index.html']
+          }
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-htmlhint');
@@ -54,9 +69,10 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-minify-html");
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-cache-breaker');
 
   grunt.registerTask('default', ['htmlhint', 'csslint','minifyHtml', 'cssmin']);
-  grunt.registerTask('build-dist', ['minifyHtml', 'cssmin', 'copy']);
+  grunt.registerTask('build-dist', ['copy:build','cachebreaker','minifyHtml', 'cssmin', 'copy:assets']);
   grunt.registerTask('test', ['htmlhint', 'csslint']);
 
 };
