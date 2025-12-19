@@ -26,11 +26,11 @@ a {
 }
 
 a svg:hover {
-    fill: #ff663b;
+    fill: #ffcaff;
 }
 
 a:hover {
-    color: #ff663b;
+    color: #ffcaff;
 }
 
 .icon{
